@@ -1,5 +1,4 @@
 
-
 def bsearch(list,searchvalue):
     
     low=0
@@ -35,3 +34,18 @@ def bsearch(numbers,value):
             return mid
     return -1
 
+#-----------------------------------------------------------------------------------
+# Ketema Desissa
+# @02594803
+def bsearch(N,target):
+    Low=0
+    High=len(N)-1        
+    while(Low<=High):
+        mid=(Low+High)/2        
+        if(N[mid]==target):
+                return mid
+        elif(N[mid]<target):
+            Low=mid+1            
+        elif(N[mid]>target):
+                 High=mid-1        
+    return -1
